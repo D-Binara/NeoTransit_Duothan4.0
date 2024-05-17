@@ -1,0 +1,44 @@
+/* public/css/custom.css */
+
+/* Style for custom logout button */
+.btn-danger {
+    color: white !important;
+}
+
+/* Ensure there's consistent margin between the nav items */
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* public/css/custom.css */
+
+/* Ensure there's consistent margin between the nav items */
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Style for login and register buttons */
+.btn-primary {
+    background-color: blue;
+    border-color: blue;
+    color: white !important;
+}
+
+/* Style for logout button */
+.btn-danger {
+    color: white !important;
+}
+
+/* Centering the ul within the navbar */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Centering the li elements within the ul */
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+}
