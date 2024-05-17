@@ -20,4 +20,7 @@
         </div>
     </div>
 </div>
+
+
+<a href="{{ route('map') }}" class="btn btn-primary">Go to Route</a>
 @endsection
