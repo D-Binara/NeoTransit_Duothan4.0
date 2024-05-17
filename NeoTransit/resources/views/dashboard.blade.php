@@ -1,23 +1,15 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
+@extends('layouts.admin')
+@section('content')
 <div class="container">
     <h1 class="mt-5">Admin Dashboard</h1>
-    
+
     <div class="row  bg-secondary justify-content-between mt-5 p-3 border  rounded">
             <div class="col-3">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body justify-content-center">
                         <h3 class="card-title">Users</h3>
                         <h5 class="card-text">12</h5>
-                        
+
                     </div>
                 </div>
             </div>
@@ -43,7 +35,7 @@
                 </tr>
             </thead>
             <tbody>
-                
+
                 <tr>
                     <td>User</td>
                     <td>User123</td>
@@ -51,7 +43,7 @@
                     <td>Tele</td>
                     <td>Tele</td>
                 </tr>
-                
+
             </tbody>
         </table>
         <div class="row">
@@ -70,7 +62,7 @@
             </nav>
         </div>
     </div>
-    
+
     <div class="row mt-5">
         <h2>Payment Information</h2>
         <table class="table  table-light table-hover border border-primary rounded">
@@ -154,6 +146,5 @@
         </div>
     </div>
 </div>
+@endsection
 
-</body>
-</html>
