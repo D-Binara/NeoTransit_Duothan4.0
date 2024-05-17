@@ -47,6 +47,8 @@ class UserController extends Controller
         $user->save();
 
         // Step 5: Return a Response
-        return redirect()->route('addUser');
+        return redirect()->route('updateUser');
     }
+
+
 }
