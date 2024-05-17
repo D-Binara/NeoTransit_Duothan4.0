@@ -29,3 +29,5 @@ Route::put('/updateUser', [App\Http\Controllers\UserController::class, 'updateUs
 Route::POST('/addUser', [App\Http\Controllers\UserController::class, 'addUser'])->name('addUser');
 
 Route::get('/map', [App\Http\Controllers\MapsController::class, 'mapView'])->name('map');
+
+Route::get('/dashboard', [App\Http\Controllers\DashboradController::class, 'dashboardView'])->name('dashboardView');

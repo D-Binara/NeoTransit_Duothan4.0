@@ -12,14 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
-
-    <!-- CSS -->
-    <link rel = "stylesheet" href="style.css">
-</head>
-
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -35,21 +28,6 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Centering the navbar items -->
-                <ul class="navbar-nav ms-auto mx-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/map') }}">{{ __('Map') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/services') }}">{{ __('Services') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/contact') }}">{{ __('Contact') }}</a>
-                    </li>
-                </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
@@ -89,7 +67,7 @@
     </nav>
 
     <main class="py-4">
-        @yield('content')
+        @yield('content2')
     </main>
 </div>
 </body>
