@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title> Credit Card Form  </title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style1.css">
 
 </head>
 <body>
