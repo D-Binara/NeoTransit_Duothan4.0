@@ -52,8 +52,8 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'firstname' => ['required', 'string', 'min:8', 'unique:users'],
-            'lastname' => ['required', 'string', 'min:8', 'unique:users'],
+            'firstname' => ['required', 'string', 'min:2', 'unique:users'],
+            'lastname' => ['required', 'string', 'min:2', 'unique:users'],
             'mobileNumber' => ['required', 'string', 'min:10', 'unique:users'],
         ]);
     }
@@ -73,6 +73,16 @@ class RegisterController extends Controller
             'firstname' => $data['firstname'],
             'lastname' => $data['lastname'],
             'mobileNumber' => $data['mobileNumber'],
+            'dtp' => $this->generateUniqueDtpCode(),
         ]);
+    }
+
+    private function generateUniqueDtpCode()
+    {
+        do {
+            $dtpCode = mt_rand(1000, 9999);
+        } while (User::where('dtp', $dtpCode)->exists());
+
+        return $dtpCode;
     }
 }
