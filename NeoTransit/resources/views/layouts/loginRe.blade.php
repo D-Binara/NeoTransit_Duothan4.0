@@ -12,16 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
-
-    <!-- CSS -->
-    <link rel = "stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style1.css">
-
-</head>
-
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -37,19 +28,6 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Centering the navbar items -->
-                <ul class="navbar-nav ms-auto mx-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/map') }}">{{ __('Map') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/payment') }}">{{ __('Payment') }}</a>
-                    </li>
-                    
-                </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
@@ -89,7 +67,7 @@
     </nav>
 
     <main class="py-4">
-        @yield('content')
+        @yield('content2')
     </main>
 </div>
 </body>

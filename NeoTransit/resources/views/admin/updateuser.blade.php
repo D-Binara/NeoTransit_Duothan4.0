@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <div class="container-fluid" style="background-image: url('https://kelley.iu.edu/images/bloomington/programs/undergrad/academics/workshops/digital-transportation-logistics-workshop-topimage-768x450.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center top; width: 100vw; height: 100vh; margin-top: -20px;">
@@ -7,7 +7,7 @@
 
         <div class="row justify-content-center">
             <div class="col-md-8">
-              
+
             <div class="card-header font-semibold"><h1>{{ __('Update User') }}</h1></div>
 
 
@@ -124,5 +124,5 @@
                 </div>
             </div>
         </div>
-    
+
 @endsection

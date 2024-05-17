@@ -12,16 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
-
-    <!-- CSS -->
-    <link rel = "stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style1.css">
-
-</head>
-
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -40,15 +31,17 @@
                 <!-- Centering the navbar items -->
                 <ul class="navbar-nav ms-auto mx-2">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
+                        <a class="nav-link" href="{{ url('/addUserView') }}">{{ __('Add User') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/map') }}">{{ __('Map') }}</a>
+                        <a class="nav-link" href="{{ url('/updateUser') }}">{{ __('Update User') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/payment') }}">{{ __('Payment') }}</a>
+                        <a class="nav-link" href="{{ url('/addAdmin') }}">{{ __('Add Admin') }}</a>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/updateAdminView') }}">{{ __('Update Admin') }}</a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
