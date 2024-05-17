@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
@@ -76,7 +78,7 @@ class UserController extends Controller
         // You may choose to log in the user automatically here if desired
 
         // Redirect the user after registration
-        return redirect('/')->with('success', 'Registration successful! Please login.');
+        return redirect('/addUserView')->with('success', 'Registration successful! Please login.');
     }
 
 
