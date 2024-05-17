@@ -51,4 +51,33 @@ class UserController extends Controller
     }
 
 
+    public function addUser(Request $request)
+    {
+        // Validate the user's input
+        $request->validate([
+            'firstname' => 'required|string|max:255',
+            'lastname' => 'required|string|max:255',
+            'name' => 'required|string|max:255|unique:users',
+            'mobileNumber' => 'required|string|max:255|unique:users',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
+
+        // Create a new user instance
+        $user = new User();
+        $user->firstname = $request->firstname;
+        $user->lastname = $request->lastname;
+        $user->name = $request->name;
+        $user->mobileNumber = $request->mobileNumber;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        // You may choose to log in the user automatically here if desired
+
+        // Redirect the user after registration
+        return redirect('/')->with('success', 'Registration successful! Please login.');
+    }
+
+
 }
