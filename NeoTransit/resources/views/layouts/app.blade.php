@@ -12,16 +12,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-
-
-    <!-- CSS -->
-    <link rel = "stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style1.css">
-
-</head>
-
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -43,7 +34,7 @@
                         <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/map') }}">{{ __('Map') }}</a>
+                        <a class="nav-link" href="{{ url('map') }}">{{ __('Map') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/payment') }}">{{ __('Payment') }}</a>
