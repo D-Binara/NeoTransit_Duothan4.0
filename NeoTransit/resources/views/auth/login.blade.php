@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container-fluid" style="background: linear-gradient(135deg, #71b7e6, #9b59b6); background-size: cover; background-repeat: no-repeat; background-position: center top; width: 100vw; height: 100vh; margin-top: -20px;">
+     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-                <div class="content">
+            <div class="">
+                <div class="card-header mt-6"><h1>{{ __('Login') }}</h1></div>
+                <div class=" card content">
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
