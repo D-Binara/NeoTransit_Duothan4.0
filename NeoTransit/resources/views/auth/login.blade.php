@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container-fluid" style="background: linear-gradient(135deg, #71b7e6, #9b59b6); background-size: cover; background-repeat: no-repeat; background-position: center top; width: 100vw; height: 100vh; margin-top: -20px;">
+<div class="container-fluid" style="background-image: url('https://kelley.iu.edu/images/bloomington/programs/undergrad/academics/workshops/digital-transportation-logistics-workshop-topimage-768x450.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center top; width: 100vw; height: 100vh; margin-top: -20px;">
+    <!-- Your content here -->
      <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="">
