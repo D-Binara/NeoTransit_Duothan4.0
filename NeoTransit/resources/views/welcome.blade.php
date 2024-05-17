@@ -35,15 +35,13 @@
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="{{ url('/about') }}">{{ __('About') }}</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/map') }}">{{ __('Map') }}</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="{{ url('/services') }}">{{ __('Services') }}</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/payment') }}">{{ __('Payment') }}</a>
                     </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link" href="{{ url('/contact') }}">{{ __('Contact') }}</a>
-                    </li>
+                 
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -52,13 +50,13 @@
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a class="btn btn-primary mx-2" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
 
                         @if (Route::has('register'))
                             <li class="nav-item mx-2">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a class="btn btn-primary mx-2" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>
                         @endif
                     @else

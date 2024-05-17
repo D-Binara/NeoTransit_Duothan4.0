@@ -34,14 +34,12 @@
                         <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/about') }}">{{ __('About') }}</a>
+                        <a class="nav-link" href="{{ url('/map') }}">{{ __('Map') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/services') }}">{{ __('Services') }}</a>
+                        <a class="nav-link" href="{{ url('/payment') }}">{{ __('Payment') }}</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/contact') }}">{{ __('Contact') }}</a>
-                    </li>
+                    
                 </ul>
 
                 <!-- Right Side Of Navbar -->
