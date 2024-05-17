@@ -24,7 +24,8 @@ class User extends Authenticatable
         'firstname',
         'lastname',
         'mobileNumber',
-        'dtp'
+        'dtp',
+        'admin'
 
 
     ];
