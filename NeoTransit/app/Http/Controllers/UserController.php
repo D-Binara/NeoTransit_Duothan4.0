@@ -80,6 +80,4 @@ class UserController extends Controller
         // Redirect the user after registration
         return redirect('/addUserView')->with('success', 'Registration successful! Please login.');
     }
-
-
 }
