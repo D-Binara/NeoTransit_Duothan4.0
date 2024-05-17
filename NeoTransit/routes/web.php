@@ -24,6 +24,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/addUserView', [App\Http\Controllers\UserController::class, 'addUserView'])->name('addUser');
 Route::get('/updateUser', [App\Http\Controllers\UserController::class, 'updateUserView'])->name('updateUserView');
 Route::get('/addAdmin', [App\Http\Controllers\AdminController::class, 'addAdminView'])->name('addAdminView');
+Route::get('/updateAdminView', [App\Http\Controllers\AdminController::class, 'updateAdminView'])->name('updateAdminView');
 //
 Route::put('/updateUser', [App\Http\Controllers\UserController::class, 'updateUser'])->name('updateUser');
 Route::POST('/addUser', [App\Http\Controllers\UserController::class, 'addUser'])->name('addUser');
