@@ -23,4 +23,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/addUser', [App\Http\Controllers\UserController::class, 'addUserView'])->name('addUser');
 Route::get('/updateUser', [App\Http\Controllers\UserController::class, 'updateUserView'])->name('updateUserView');
 Route::get('/addAdmin', [App\Http\Controllers\AdminController::class, 'addAdminView'])->name('addAdminView');
-Route::get('/updateAdmin', [App\Http\Controllers\AdminController::class, 'updateAdminView'])->name('updateAdmin');
+//
+Route::put('/updateUser', [App\Http\Controllers\UserController::class, 'updateUser'])->name('updateUser');
+
