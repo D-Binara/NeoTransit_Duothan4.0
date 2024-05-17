@@ -27,3 +27,6 @@ Route::get('/addAdmin', [App\Http\Controllers\AdminController::class, 'addAdminV
 Route::put('/updateUser', [App\Http\Controllers\UserController::class, 'updateUser'])->name('updateUser');
 Route::POST('/addUser', [App\Http\Controllers\UserController::class, 'addUser'])->name('addUser');
 
+//Route::get('/dashboard', function () {
+//    Route::get('/Admin', [App\Http\Controllers\AdminController::class, 'AdminView'])->name('AdminView');
+//})->middleware('check.admin');
